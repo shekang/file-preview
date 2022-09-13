@@ -1,6 +1,6 @@
 {
   "name": "@file-detail/preview-video",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "file-preview-video",
   "source": "src/index.ts",
   "types": "src/index.ts",
@@ -19,7 +19,7 @@
     "dev": "microbundle watch"
   },
   "dependencies": {
-    "@file-detail/shared": "workspace: *",
+    "@file-detail/shared": "workspace:*",
     "fast-glob": "3.2.11",
     "@ffmpeg-installer/ffmpeg": "1.1.0",
     "fluent-ffmpeg": "2.1.2"

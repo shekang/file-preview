@@ -1,4 +1,4 @@
-# File Detail
+# File Detail  ![npm](https://img.shields.io/npm/v/@file-detail/core)
 
 Get a preview of any file
 

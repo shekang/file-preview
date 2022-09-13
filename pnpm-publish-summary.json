@@ -2,19 +2,19 @@
 	"publishedPackages": [
 		{
 			"name": "@file-detail/shared",
-			"version": "0.0.1"
+			"version": "0.0.3"
 		},
 		{
 			"name": "@file-detail/meta-data",
-			"version": "0.0.1"
+			"version": "0.0.3"
 		},
 		{
 			"name": "@file-detail/preview-video",
-			"version": "0.0.1"
+			"version": "0.0.3"
 		},
 		{
 			"name": "@file-detail/core",
-			"version": "0.0.1"
+			"version": "0.0.3"
 		}
 	]
 }
