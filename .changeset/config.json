@@ -1,0 +1,11 @@
+{
+    "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
+    "changelog": "@changesets/cli/changelog",
+    "commit": false,
+    "fixed": [["@file-detail/*"]],
+    "linked": [],
+    "access": "restricted",
+    "baseBranch": "main",
+    "bumpVersionsWithWorkspaceProtocolOnly": false,
+    "ignore": []
+}

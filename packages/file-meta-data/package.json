@@ -1,0 +1,30 @@
+{
+  "name": "@file-detail/meta-data",
+  "version": "0.0.1",
+  "description": "file-meta-data",
+  "source": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.module.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "@file-detail/shared": "workspace: *",
+    "filesize": "9.0.11",
+    "sharp": "0.30.7",
+    "image-size": "1.0.2",
+    "color-thief-node": "1.0.4"
+  },
+  "author": "shekang",
+  "license": "Apache-2.0"
+}

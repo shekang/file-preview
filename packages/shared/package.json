@@ -1,0 +1,28 @@
+{
+  "name": "@file-detail/shared",
+  "version": "0.0.1",
+  "description": "file-shared",
+  "source": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.module.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "fs-extra": "10.1.0",
+    "emittery": "0.12.1",
+    "pump": "3.0.0"
+  },
+  "author": "shekang",
+  "license": "Apache-2.0"
+}

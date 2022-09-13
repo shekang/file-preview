@@ -1,0 +1,78 @@
+{
+  "name": "file-detail",
+  "version": "0.0.0",
+  "description": "Get a preview of any file",
+  "main": "index.js",
+  "private": "true",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "workspaces": [
+    "packages/file-preview/*",
+    "packages/file-meta-data",
+    "packages/shared",
+    "packages/core"
+  ],
+
+  "scripts": {
+    "setup-dev": "pnpm i && pre-test &&  pnpm build",
+    "dev": "npx zx ./scripts/dev.mjs",
+    "dev:core": "pnpm -F @file-detail/core dev",
+    "dev:meta": "pnpm -F @file-detail/meta-data dev ",
+    "dev:shared": "pnpm -F @file-detail/shared dev",
+    "test": "xo && jest",
+    "pre-test": "npx zx ./scripts/pre-test.mjs",
+    "build": "turbo run build",
+    "clean": "rimraf 'packages/**/{dist,node_modules,.turbo}' && rimraf node_modules",
+    "re": "pnpm changeset version",
+    "beta": "pnpm changeset version --snapshot beta",
+    "change": "pnpm changeset",
+    "pb": "pnpm publish -r --no-git-checks --report-summary --access public"
+  },
+  "xo": {
+    "rules": {
+      "@typescript-eslint/no-require-imports": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "unicorn/prefer-module": "off",
+      "import/extensions": "off",
+      "n/prefer-global/process": "off",
+      "@typescript-eslint/no-unsafe-return": "off",
+      "@typescript-eslint/restrict-template-expressions": "off"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "@changesets/cli": "2.24.3",
+    "@tsconfig/node16": "1.0.3",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "28.1.8",
+    "@types/node": "18.7.16",
+    "concurrently": "^7.3.0",
+    "cross-env": "7.0.3",
+    "husky": "8.0.1",
+    "inquirer": "^9.1.0",
+    "jest": "28.1.3",
+    "microbundle": "^0.15.0",
+    "ora": "^6.1.2",
+    "rimraf": "^3.0.2",
+    "turbo": "1.4.3",
+    "typescript": "4.7.4",
+    "xo": "^0.52.3",
+    "zx": "7.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shekang/file-preview.git"
+  },
+  "author": "SheKang",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/shekang/file-preview/issues"
+  },
+  "homepage": "https://github.com/shekang/file-preview#readme"
+}

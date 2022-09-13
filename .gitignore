@@ -1,0 +1,50 @@
+# system
+.DS_Store
+thumbs.db
+*.local
+
+# Dependency directories
+node_modules/
+
+# project outdir
+dist
+out/
+
+# file
+*.zip
+data.json
+
+# Optional eslint cache
+.eslintcache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage directory used by tools like jest
+coverage
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Typescript v1 declaration files
+typings/
+
+# local env files
+.env.local
+.env.*.local
+
+# lerna packages
+packages/*/lib
+
+
+.clinic
+.turbo

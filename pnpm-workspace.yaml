@@ -1,0 +1,5 @@
+packages:
+    - "packages/file-preview/*"
+    - "packages/file-meta-data"
+    - "packages/shared"
+    - "packages/core"
