@@ -1,4 +1,4 @@
-# File Detail  <a href="https://www.npmjs.com/package/@file-detail/core"><img src="https://img.shields.io/npm/v/@file-detail/core"></a>
+# File Detail  <a href="https://www.npmjs.com/package/@file-detail/core" target="__bank"><img src="https://img.shields.io/npm/v/@file-detail/core"></a>
 
 Get a preview of any file
 
