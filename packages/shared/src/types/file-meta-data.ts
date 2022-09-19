@@ -31,7 +31,7 @@ export type Psd = {
 } & Base;
 
 /** OriginalMetaData */
-export type OriginalMetaData = Img | Psd;
+export type OriginalMetaData = Base;
 
 /** Meta data */
 export type MetaData = Base;

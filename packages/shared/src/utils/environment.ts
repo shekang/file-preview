@@ -1,3 +1,7 @@
+import {platform} from 'node:process';
+
+export const isMac = platform === 'darwin';
+export const isWindows = platform === 'win32';
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
 
 const isNode

@@ -1,7 +1,7 @@
 {
-  "name": "@file-detail/core",
-  "version": "0.0.3",
-  "description": "file-core",
+  "name": "@file-detail/preview-system",
+  "version": "0.0.0",
+  "description": "file-preview-system",
   "source": "src/index.ts",
   "types": "src/index.ts",
   "exports": {
@@ -20,9 +20,7 @@
   },
   "dependencies": {
     "@file-detail/shared": "workspace:*",
-    "@file-detail/preview-system": "workspace:*",
-    "@file-detail/preview-video": "workspace:*",
-    "@file-detail/meta-data": "workspace:*"
+    "shelljs":"0.8.5"
   },
   "author": "shekang",
   "license": "Apache-2.0"

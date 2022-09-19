@@ -21,8 +21,8 @@ export const previewer = async (previewerParameters: DetectParameters): Promise<
 	if (status) {
 		// 1. thumbnail
 		const key = 'preview';
-		const parseVideo = await import(`@file-detail/preview-${data?.type}`);
-		const previewFunc = parseVideo[key];
+		const previewMap = await import(`@file-detail/preview-${data?.type}`);
+		const previewFunc = previewMap[key];
 		if (previewFunc) {
 			const previewResult: PreviewResult = await previewFunc(
 				previewerParameters.previewParameters,
